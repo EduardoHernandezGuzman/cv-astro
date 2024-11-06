@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Experience from '../components/Experience.astro';
+import Skills from '../components/Skills.astro';
+
+const personalInfo = {
+  name: "Eduardo Hernández Guzmán",
+  title: "Full Stack Developer | Data Engineer",
+  contact: {
+    email: "edohdezg@gmail.com", 
+    linkedin: "https://www.linkedin.com/in/eduardo-hernandez-guzman/",
+    github: "https://github.com/EduardoHernandezGuzman"
+  }
+};
+
+const experiences = [
+  {
+    position: "Data Engineer",
+    company: "Actual",
+    period: "Presente",
+    responsibilities: [
+      "Desarrollo de soluciones de análisis de datos",
+      "Implementación de sistemas de procesamiento de datos",
+      "Creación de soluciones tecnológicas innovadoras"
+    ]
+  },
+  {
+    position: "Teacher Assistant y Mentor",
+    company: "4Geeks Academy",
+    period: "Anterior",
+    responsibilities: [
+      "Mentoría a estudiantes de desarrollo web",
+      "Apoyo en la formación de nuevos desarrolladores",
+      "Guía en proyectos prácticos"
+    ]
+  },
+  {
+    position: "Profesor de Fotografía Profesional",
+    company: "Escuela Keltia",
+    period: "Anterior",
+    responsibilities: [
+      "Formación en técnicas fotográficas avanzadas",
+      "Desarrollo de programas educativos",
+      "Mentoría a futuros fotógrafos profesionales"
+    ]
+  },
+  {
+    position: "Fotógrafo Profesional",
+    company: "Freelance",
+    period: "Experiencia Previa",
+    responsibilities: [
+      "Colaboraciones con Vodafone España y CCM",
+      "Trabajos para agencias como Talentocom y Maxim Models",
+      "Publicaciones en revista Semana y Editorial Martínez Roca"
+    ]
+  }
+];
+
+const skills = [
+  "Desarrollo Full Stack",
+  "Data Engineering",
+  "Python",
+  "JavaScript",
+  "Análisis de Datos",
+  "Fotografía Profesional",
+  "Mentoría",
+  "Resolución de Problemas",
+  "Git",
+  "SQL",
+  "Desarrollo Web",
+  "Metodologías Ágiles"
+];
+
+const education = [
+  {
+    degree: "Formación en Desarrollo Web",
+    institution: "4Geeks Academy",
+    period: "Completado"
+  },
+  {
+    degree: "Fotografía Profesional",
+    institution: "EFTI y Escuela Keltia Madrid",
+    period: "Completado"
+  },
+  {
+    degree: "Derecho",
+    institution: "Universidad de La Laguna y Universidad de León",
+    period: "Estudios Previos"
+  }
+];
+---
+
+<Layout title="CV | Eduardo Hernández Guzmán">
+  <div class="bg-white p-8 rounded-lg shadow-lg">
+    <Header {...personalInfo} />
+    
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Sobre Mí</h2>
+      <p class="text-gray-700 mb-4">
+        Full Stack Developer y Data Engineer con base en Madrid. Combino mi experiencia en desarrollo web con análisis de datos para crear soluciones tecnológicas innovadoras. Mi formación diversa, que incluye derecho y fotografía profesional, me proporciona una perspectiva única en la resolución de problemas y la creatividad.
+      </p>
+    </section>
+
+    <Experience experiences={experiences} />
+    
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Educación</h2>
+      {education.map((edu) => (
+        <div class="mb-4">
+          <h3 class="text-xl font-semibold">{edu.degree}</h3>
+          <p class="text-gray-600">{edu.institution} | {edu.period}</p>
+        </div>
+      ))}
+    </section>
+
+    <Skills skills={skills} />
+  </div>
+</Layout>

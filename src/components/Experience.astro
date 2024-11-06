@@ -1,0 +1,18 @@
+---
+const { experiences } = Astro.props;
+---
+
+<section class="mb-8">
+  <h2 class="text-2xl font-bold mb-4">Experiencia Profesional</h2>
+  {experiences.map((exp) => (
+    <div class="mb-4">
+      <h3 class="text-xl font-semibold">{exp.position}</h3>
+      <p class="text-gray-600">{exp.company} | {exp.period}</p>
+      <ul class="list-disc list-inside mt-2">
+        {exp.responsibilities.map((resp) => (
+          <li class="text-gray-700">{resp}</li>
+        ))}
+      </ul>
+    </div>
+  ))}
+</section>
