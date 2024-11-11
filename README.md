@@ -1,47 +1,56 @@
-# Astro Starter Kit: Minimal
+# CV Digital con Astro
 
-```sh
-npm create astro@latest -- --template minimal
+Un currículum vitae digital moderno y responsive construido con Astro y Tailwind CSS.
+
+
+##  Descripción
+
+Este CV digital está diseñado para presentar información profesional de manera elegante y eficiente. Incluye:
+
+- **Información Personal**: Datos de contacto y perfil profesional
+- **Experiencia**: Historial laboral detallado
+- **Educación**: Formación académica y profesional
+- **Habilidades**: Competencias técnicas y profesionales
+
+##  Tecnologías Utilizadas
+
+- **[Astro](https://astro.build/)**: Framework web moderno para sitios estáticos
+- **[Tailwind CSS](https://tailwindcss.com/)**: Framework CSS para estilos
+
+##  Características
+
+- 📱 Diseño totalmente responsive
+- 🖨️ Optimizado para impresión
+- 🚀 Rendimiento optimizado
+- 🎨 Estilos modernos con Tailwind CSS
+- 🔄 Fácilmente actualizable
+- 📊 Estructura modular y mantenible
+
+##  Instalación y Uso
+
+1. **Clonar el repositorio**
+```bash
+git clone https://github.com/tu-usuario/cv-astro.git
+cd cv-astro
+```
+Instalar dependencias
+```bash
+npm install
+```
+Iniciar servidor de desarrollo
+```bash
+npm run dev
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## Personalización
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Modifica src/pages/index.astro con tu información personal
+Actualiza los componentes en src/components/ según necesites
+Ajusta los estilos en Tailwind según tus preferencias
 
-## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+## Contacto
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Para cualquier consulta o colaboración, puedes contactar al autor a través de:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- GitHub: [EduardoHernandezGuzman](https://github.com/EduardoHernandezGuzman)
