@@ -12,6 +12,13 @@ Este CV digital está diseñado para presentar información profesional de maner
 - **Educación**: Formación académica y profesional
 - **Habilidades**: Competencias técnicas y profesionales
 
+## Vista previa
+
+
+![imagen1](https://raw.githubusercontent.com/EduardoHernandezGuzman/cv-astro/master/screenshots/001.png)
+![imagen2](https://raw.githubusercontent.com/EduardoHernandezGuzman/cv-astro/master/screenshots/002.png)
+
+
 ##  Tecnologías Utilizadas
 
 - **[Astro](https://astro.build/)**: Framework web moderno para sitios estáticos
